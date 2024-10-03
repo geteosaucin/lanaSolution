@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{339605CB-12E8-444A-9A6E-0C1980BE5369}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>lana.UI</RootNamespace>
+    <AssemblyName>lana.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreate.Designer.cs">
+      <DependentUpon>frmCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelete.Designer.cs">
+      <DependentUpon>frmDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReadProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReadProduct.Designer.cs">
+      <DependentUpon>frmReadProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioUser.Designer.cs">
+      <DependentUpon>frmRelatorioUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdate.Designer.cs">
+      <DependentUpon>frmUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdiAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiAdm.Designer.cs">
+      <DependentUpon>mdiAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdiUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiUser.Designer.cs">
+      <DependentUpon>mdiUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utilities\Clear.cs" />
+    <Compile Include="utilities\DGVPrinter.cs" />
+    <EmbeddedResource Include="frmCreate.resx">
+      <DependentUpon>frmCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelete.resx">
+      <DependentUpon>frmDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReadProduct.resx">
+      <DependentUpon>frmReadProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioUser.resx">
+      <DependentUpon>frmRelatorioUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdate.resx">
+      <DependentUpon>frmUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiAdm.resx">
+      <DependentUpon>mdiAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiUser.resx">
+      <DependentUpon>mdiUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\lana.DTO.ProdutoDTO.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\lana.BLL\lana.BLL.csproj">
+      <Project>{49b0942d-8888-4eef-8f58-c7d539389db9}</Project>
+      <Name>lana.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lana.DTO\lana.DTO.csproj">
+      <Project>{6c56bc5d-f318-4bf4-98c6-e36542d831f5}</Project>
+      <Name>lana.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\1211807250.png" />
+    <Content Include="icons\56x56\add-database_56x56.png" />
+    <Content Include="icons\56x56\block_56x56.png" />
+    <Content Include="icons\56x56\close_56x56.png" />
+    <Content Include="icons\56x56\image_56x56.png" />
+    <Content Include="icons\56x56\users2_56x56.png" />
+    <Content Include="icons\56x56\users_msn56x56.png" />
+    <Content Include="icons\access-2_128x128.png" />
+    <Content Include="icons\access-2_256x256.png" />
+    <Content Include="icons\access_128x128.png" />
+    <Content Include="icons\access_256x256.png" />
+    <Content Include="icons\add+_128x128.png" />
+    <Content Include="icons\add+_256x256.png" />
+    <Content Include="icons\add-database_128x128.png" />
+    <Content Include="icons\add-database_256x256.png" />
+    <Content Include="icons\add-favorite_128x128.png" />
+    <Content Include="icons\add-favorite_256x256.png" />
+    <Content Include="icons\add-file_128x128.png" />
+    <Content Include="icons\add-file_256x256.png" />
+    <Content Include="icons\add-script_128x128.png" />
+    <Content Include="icons\add-script_256x256.png" />
+    <Content Include="icons\add-spreadsheet_128x128.png" />
+    <Content Include="icons\add-spreadsheet_256x256.png" />
+    <Content Include="icons\add-window_128x128.png" />
+    <Content Include="icons\add-window_256x256.png" />
+    <Content Include="icons\address book2_128x128.png" />
+    <Content Include="icons\address book2_256x256.png" />
+    <Content Include="icons\address book_128x128.png" />
+    <Content Include="icons\address book_256x256.png" />
+    <Content Include="icons\alarm_128x128.png" />
+    <Content Include="icons\alarm_256x256.png" />
+    <Content Include="icons\angry_128x128.png" />
+    <Content Include="icons\angry_256x256.png" />
+    <Content Include="icons\app_128x128.png" />
+    <Content Include="icons\app_256x256.png" />
+    <Content Include="icons\backward0_128x128.png" />
+    <Content Include="icons\backward0_256x256.png" />
+    <Content Include="icons\back_128x128.png" />
+    <Content Include="icons\back_256x256.png" />
+    <Content Include="icons\block_128x128.png" />
+    <Content Include="icons\block_256x256.png" />
+    <Content Include="icons\burn_128x128.png" />
+    <Content Include="icons\burn_256x256.png" />
+    <Content Include="icons\button-back_128x128.png" />
+    <Content Include="icons\button-back_256x256.png" />
+    <Content Include="icons\button-blue-next_128x128.png" />
+    <Content Include="icons\button-blue-next_256x256.png" />
+    <Content Include="icons\button-blue_128x128.png" />
+    <Content Include="icons\button-blue_256x256.png" />
+    <Content Include="icons\button-down_128x128.png" />
+    <Content Include="icons\button-down_256x256.png" />
+    <Content Include="icons\button-next_128x128.png" />
+    <Content Include="icons\button-next_256x256.png" />
+    <Content Include="icons\button-pause2_128x128.png" />
+    <Content Include="icons\button-pause2_256x256.png" />
+    <Content Include="icons\button-pause_128x128.png" />
+    <Content Include="icons\button-pause_256x256.png" />
+    <Content Include="icons\button-play_128x128.png" />
+    <Content Include="icons\button-play_256x256.png" />
+    <Content Include="icons\button-stop_128x128.png" />
+    <Content Include="icons\button-stop_256x256.png" />
+    <Content Include="icons\button-up_128x128.png" />
+    <Content Include="icons\button-up_256x256.png" />
+    <Content Include="icons\calculator_128x128.png" />
+    <Content Include="icons\calculator_256x256.png" />
+    <Content Include="icons\calendar_128x128.png" />
+    <Content Include="icons\calendar_256x256.png" />
+    <Content Include="icons\camera_128x128.png" />
+    <Content Include="icons\camera_256x256.png" />
+    <Content Include="icons\caution_128x128.png" />
+    <Content Include="icons\caution_256x256.png" />
+    <Content Include="icons\cd_128x128.png" />
+    <Content Include="icons\cd_256x256.png" />
+    <Content Include="icons\chart_128x128.png" />
+    <Content Include="icons\chart_256x256.png" />
+    <Content Include="icons\chat_128x128.png" />
+    <Content Include="icons\chat_256x256.png" />
+    <Content Include="icons\close_128x128.png" />
+    <Content Include="icons\close_256x256.png" />
+    <Content Include="icons\computer_128x128.png" />
+    <Content Include="icons\computer_256x256.png" />
+    <Content Include="icons\Configure.png" />
+    <Content Include="icons\construction_128x128.png" />
+    <Content Include="icons\construction_256x256.png" />
+    <Content Include="icons\copy_128x128.png" />
+    <Content Include="icons\copy_256x256.png" />
+    <Content Include="icons\credit-card_128x128.png" />
+    <Content Include="icons\credit-card_256x256.png" />
+    <Content Include="icons\cut-2_128x128.png" />
+    <Content Include="icons\cut-2_256x256.png" />
+    <Content Include="icons\cut_128x128.png" />
+    <Content Include="icons\cut_256x256.png" />
+    <Content Include="icons\database1_128x128.png" />
+    <Content Include="icons\database1_256x256.png" />
+    <Content Include="icons\database2_128x128.png" />
+    <Content Include="icons\database2_256x256.png" />
+    <Content Include="icons\database_128x128.png" />
+    <Content Include="icons\database_256x256.png" />
+    <Content Include="icons\dead_128x128.png" />
+    <Content Include="icons\dead_256x256.png" />
+    <Content Include="icons\delete-database_128x128.png" />
+    <Content Include="icons\delete-database_256x256.png" />
+    <Content Include="icons\delete-favorite_128x128.png" />
+    <Content Include="icons\delete-favorite_256x256.png" />
+    <Content Include="icons\delete-file_128x128.png" />
+    <Content Include="icons\delete-file_256x256.png" />
+    <Content Include="icons\delete-script_128x128.png" />
+    <Content Include="icons\delete-script_256x256.png" />
+    <Content Include="icons\delete-spreadsheet_128x128.png" />
+    <Content Include="icons\delete-spreadsheet_256x256.png" />
+    <Content Include="icons\delete-window_128x128.png" />
+    <Content Include="icons\delete-window_256x256.png" />
+    <Content Include="icons\documents2_128x128.png" />
+    <Content Include="icons\documents2_256x256.png" />
+    <Content Include="icons\documents_128x128.png" />
+    <Content Include="icons\documents_256x256.png" />
+    <Content Include="icons\document_128x128.png" />
+    <Content Include="icons\document_256x256.png" />
+    <Content Include="icons\dollar_128x128.png" />
+    <Content Include="icons\dollar_256x256.png" />
+    <Content Include="icons\download_128x128.png" />
+    <Content Include="icons\download_256x256.png" />
+    <Content Include="icons\down_128x128.png" />
+    <Content Include="icons\down_256x256.png" />
+    <Content Include="icons\edit-script_128x128.png" />
+    <Content Include="icons\edit-script_256x256.png" />
+    <Content Include="icons\edit-spreadsheet_128x128.png" />
+    <Content Include="icons\edit-spreadsheet_256x256.png" />
+    <Content Include="icons\edit_128x128.png" />
+    <Content Include="icons\edit_256x256.png" />
+    <Content Include="icons\euro_128x128.png" />
+    <Content Include="icons\euro_256x256.png" />
+    <Content Include="icons\favorites_128x128.png" />
+    <Content Include="icons\favorites_256x256.png" />
+    <Content Include="icons\fax_128x128.png" />
+    <Content Include="icons\fax_256x256.png" />
+    <Content Include="icons\FileVault.png" />
+    <Content Include="icons\file_128x128.png" />
+    <Content Include="icons\file_256x256.png" />
+    <Content Include="icons\find_128x128.png" />
+    <Content Include="icons\find_256x256.png" />
+    <Content Include="icons\folder share_128x128.png" />
+    <Content Include="icons\folder share_256x256.png" />
+    <Content Include="icons\folder_128x128.png" />
+    <Content Include="icons\folder_256x256.png" />
+    <Content Include="icons\folder_blue_system_88731.jpg" />
+    <Content Include="icons\forward_128x128.png" />
+    <Content Include="icons\forward_256x256.png" />
+    <Content Include="icons\frase2_quem_somos.png" />
+    <Content Include="icons\ftp+_128x128.png" />
+    <Content Include="icons\ftp+_256x256.png" />
+    <Content Include="icons\fudge-dice.png" />
+    <Content Include="icons\games_128x128.png" />
+    <Content Include="icons\games_256x256.png" />
+    <Content Include="icons\game_128x128.png" />
+    <Content Include="icons\game_256x256.png" />
+    <Content Include="icons\global-calendar_128x128.png" />
+    <Content Include="icons\global-calendar_256x256.png" />
+    <Content Include="icons\goofy_128x128.png" />
+    <Content Include="icons\goofy_256x256.png" />
+    <Content Include="icons\green-button_128x128.png" />
+    <Content Include="icons\green-button_256x256.png" />
+    <Content Include="icons\handset_128x128.png" />
+    <Content Include="icons\handset_256x256.png" />
+    <Content Include="icons\happy_128x128.png" />
+    <Content Include="icons\happy_256x256.png" />
+    <Content Include="icons\hd-2_128x128.png" />
+    <Content Include="icons\hd-2_256x256.png" />
+    <Content Include="icons\hd-3_128x128.png" />
+    <Content Include="icons\hd-3_256x256.png" />
+    <Content Include="icons\hd_128x128.png" />
+    <Content Include="icons\hd_256x256.png" />
+    <Content Include="icons\help2_128x128.png" />
+    <Content Include="icons\help2_256x256.png" />
+    <Content Include="icons\help_128x128.png" />
+    <Content Include="icons\help_256x256.png" />
+    <Content Include="icons\history_128x128.png" />
+    <Content Include="icons\history_256x256.png" />
+    <Content Include="icons\home_128x128.png" />
+    <Content Include="icons\home_256x256.png" />
+    <Content Include="icons\ICONE.ico" />
+    <Content Include="icons\icones_img.jpg" />
+    <Content Include="icons\icone_manutencao.png" />
+    <Content Include="icons\Icone_virt.png" />
+    <Content Include="icons\images.jpg" />
+    <Content Include="icons\image_128x128.png" />
+    <Content Include="icons\image_256x256.png" />
+    <Content Include="icons\impressora_128x128.png" />
+    <Content Include="icons\impressora_256x256.png" />
+    <Content Include="icons\install_128x128.png" />
+    <Content Include="icons\install_256x256.png" />
+    <Content Include="icons\internet-search_128x128.png" />
+    <Content Include="icons\internet-search_256x256.png" />
+    <Content Include="icons\ipod-black_128x128.png" />
+    <Content Include="icons\ipod-black_256x256.png" />
+    <Content Include="icons\ipod_128x128.png" />
+    <Content Include="icons\ipod_256x256.png" />
+    <Content Include="icons\KEYA_1~1.PNG" />
+    <Content Include="icons\KEYA_2~1.PNG" />
+    <Content Include="icons\largeicons_128x128.png" />
+    <Content Include="icons\largeicons_256x256.png" />
+    <Content Include="icons\lock_128x128.png" />
+    <Content Include="icons\lock_256x256.png" />
+    <Content Include="icons\Logo_Microsoft_Word_2013.png" />
+    <Content Include="icons\mac_128x128.png" />
+    <Content Include="icons\mac_256x256.png" />
+    <Content Include="icons\money_128x128.png" />
+    <Content Include="icons\money_256x256.png" />
+    <Content Include="icons\mouse_128x128.png" />
+    <Content Include="icons\mouse_256x256.png" />
+    <Content Include="icons\movies_128x128.png" />
+    <Content Include="icons\movies_256x256.png" />
+    <Content Include="icons\music-cd_128x128.png" />
+    <Content Include="icons\music-cd_256x256.png" />
+    <Content Include="icons\music-folder2_128x128.png" />
+    <Content Include="icons\music-folder2_256x256.png" />
+    <Content Include="icons\music-folder_128x128.png" />
+    <Content Include="icons\music-folder_256x256.png" />
+    <Content Include="icons\music_128x128.png" />
+    <Content Include="icons\music_256x256.png" />
+    <Content Include="icons\network share_128x128.png" />
+    <Content Include="icons\network share_256x256.png" />
+    <Content Include="icons\net_128x128.png" />
+    <Content Include="icons\net_256x256.png" />
+    <Content Include="icons\next-page_128x128.png" />
+    <Content Include="icons\next-page_256x256.png" />
+    <Content Include="icons\notepad_128x128.png" />
+    <Content Include="icons\notepad_256x256.png" />
+    <Content Include="icons\off-network_128x128.png" />
+    <Content Include="icons\off-network_256x256.png" />
+    <Content Include="icons\offline_128x128.png" />
+    <Content Include="icons\offline_256x256.png" />
+    <Content Include="icons\online-network_128x128.png" />
+    <Content Include="icons\online-network_256x256.png" />
+    <Content Include="icons\online_128x128.png" />
+    <Content Include="icons\online_256x256.png" />
+    <Content Include="icons\options_128x128.png" />
+    <Content Include="icons\options_256x256.png" />
+    <Content Include="icons\paint_128x128.png" />
+    <Content Include="icons\paint_256x256.png" />
+    <Content Include="icons\paper_128x128.png" />
+    <Content Include="icons\paper_256x256.png" />
+    <Content Include="icons\password_128x128.png" />
+    <Content Include="icons\password_256x256.png" />
+    <Content Include="icons\paste_128x128.png" />
+    <Content Include="icons\paste_256x256.png" />
+    <Content Include="icons\phone-button-blue_128x128.png" />
+    <Content Include="icons\phone-button-blue_256x256.png" />
+    <Content Include="icons\phone-button-green_128x128.png" />
+    <Content Include="icons\phone-button-green_256x256.png" />
+    <Content Include="icons\phone-button-red_128x128.png" />
+    <Content Include="icons\phone-button-red_256x256.png" />
+    <Content Include="icons\phone-button-yellow_128x128.png" />
+    <Content Include="icons\phone-button-yellow_256x256.png" />
+    <Content Include="icons\play-disk_128x128.png" />
+    <Content Include="icons\play-disk_256x256.png" />
+    <Content Include="icons\play_128x128.png" />
+    <Content Include="icons\play_256x256.png" />
+    <Content Include="icons\radio_128x128.png" />
+    <Content Include="icons\radio_256x256.png" />
+    <Content Include="icons\red-button_128x128.png" />
+    <Content Include="icons\red-button_256x256.png" />
+    <Content Include="icons\redo_128x128.png" />
+    <Content Include="icons\redo_256x256.png" />
+    <Content Include="icons\reload_128x128.png" />
+    <Content Include="icons\reload_256x256.png" />
+    <Content Include="icons\remove_128x128.png" />
+    <Content Include="icons\remove_256x256.png" />
+    <Content Include="icons\rewibutton-back_128x128.png" />
+    <Content Include="icons\rewibutton-back_256x256.png" />
+    <Content Include="icons\rewind_128x128.png" />
+    <Content Include="icons\rewind_256x256.png" />
+    <Content Include="icons\sad_128x128.png" />
+    <Content Include="icons\sad_256x256.png" />
+    <Content Include="icons\Sair.png" />
+    <Content Include="icons\save-as_128x128.png" />
+    <Content Include="icons\save-as_256x256.png" />
+    <Content Include="icons\save_128x128.png" />
+    <Content Include="icons\save_256x256.png" />
+    <Content Include="icons\script_128x128.png" />
+    <Content Include="icons\script_256x256.png" />
+    <Content Include="icons\search_128x128.png" />
+    <Content Include="icons\search_256x256.png" />
+    <Content Include="icons\see runing_128x128.png" />
+    <Content Include="icons\see runing_256x256.png" />
+    <Content Include="icons\settingsfile_128x128.png" />
+    <Content Include="icons\settingsfile_256x256.png" />
+    <Content Include="icons\share_128x128.png" />
+    <Content Include="icons\share_256x256.png" />
+    <Content Include="icons\shield-blue_128x128.png" />
+    <Content Include="icons\shield-blue_256x256.png" />
+    <Content Include="icons\shield-green_128x128.png" />
+    <Content Include="icons\shield-green_256x256.png" />
+    <Content Include="icons\shield-red_128x128.png" />
+    <Content Include="icons\shield-red_256x256.png" />
+    <Content Include="icons\shield-yellow_128x128.png" />
+    <Content Include="icons\shield-yellow_256x256.png" />
+    <Content Include="icons\shopping cart_128x128.png" />
+    <Content Include="icons\shopping cart_256x256.png" />
+    <Content Include="icons\sinc_128x128.png" />
+    <Content Include="icons\sinc_256x256.png" />
+    <Content Include="icons\skip-forward_128x128.png" />
+    <Content Include="icons\skip-forward_256x256.png" />
+    <Content Include="icons\smallicons_128x128.png" />
+    <Content Include="icons\smallicons_256x256.png" />
+    <Content Include="icons\smart folder_128x128.png" />
+    <Content Include="icons\smart folder_256x256.png" />
+    <Content Include="icons\smile_128x128.png" />
+    <Content Include="icons\smile_256x256.png" />
+    <Content Include="icons\software_128x128.png" />
+    <Content Include="icons\software_256x256.png" />
+    <Content Include="icons\sound-off_128x128.png" />
+    <Content Include="icons\sound-off_256x256.png" />
+    <Content Include="icons\sound_128x128.png" />
+    <Content Include="icons\sound_256x256.png" />
+    <Content Include="icons\spreadsheet_128x128.png" />
+    <Content Include="icons\spreadsheet_256x256.png" />
+    <Content Include="icons\stop_128x128.png" />
+    <Content Include="icons\stop_256x256.png" />
+    <Content Include="icons\surprised_128x128.png" />
+    <Content Include="icons\surprised_256x256.png" />
+    <Content Include="icons\swipe-machine_128x128.png" />
+    <Content Include="icons\swipe-machine_256x256.png" />
+    <Content Include="icons\tools_128x128.png" />
+    <Content Include="icons\tools_256x256.png" />
+    <Content Include="icons\transmit_128x128.png" />
+    <Content Include="icons\transmit_256x256.png" />
+    <Content Include="icons\trash-full_128x128.png" />
+    <Content Include="icons\trash-full_256x256.png" />
+    <Content Include="icons\trash_128x128.png" />
+    <Content Include="icons\trash_256x256.png" />
+    <Content Include="icons\undo_128x128.png" />
+    <Content Include="icons\undo_256x256.png" />
+    <Content Include="icons\unlock_128x128.png" />
+    <Content Include="icons\unlock_256x256.png" />
+    <Content Include="icons\up_128x128.png" />
+    <Content Include="icons\up_256x256.png" />
+    <Content Include="icons\user-busy_128x128.png" />
+    <Content Include="icons\user-busy_256x256.png" />
+    <Content Include="icons\user-off_128x128.png" />
+    <Content Include="icons\user-off_256x256.png" />
+    <Content Include="icons\user-on_128x128.png" />
+    <Content Include="icons\user-on_256x256.png" />
+    <Content Include="icons\users2_128x128.png" />
+    <Content Include="icons\users2_256x256.png" />
+    <Content Include="icons\users_128x128.png" />
+    <Content Include="icons\users_256x256.png" />
+    <Content Include="icons\users_msn_128x128.png" />
+    <Content Include="icons\users_msn_256x256.png" />
+    <Content Include="icons\user_128x128.png" />
+    <Content Include="icons\user_256x256.png" />
+    <Content Include="icons\user__128x128.png" />
+    <Content Include="icons\user__256x256.png" />
+    <Content Include="icons\view +_128x128.png" />
+    <Content Include="icons\view +_256x256.png" />
+    <Content Include="icons\view -_128x128.png" />
+    <Content Include="icons\view -_256x256.png" />
+    <Content Include="icons\web_128x128.png" />
+    <Content Include="icons\web_256x256.png" />
+    <Content Include="icons\window-column_128x128.png" />
+    <Content Include="icons\window-column_256x256.png" />
+    <Content Include="icons\window-row_128x128.png" />
+    <Content Include="icons\window-row_256x256.png" />
+    <Content Include="icons\window-spreadsheet-edit_128x128.png" />
+    <Content Include="icons\window-spreadsheet-edit_256x256.png" />
+    <Content Include="icons\window-spreadsheet_128x128.png" />
+    <Content Include="icons\window-spreadsheet_256x256.png" />
+    <Content Include="icons\window_128x128.png" />
+    <Content Include="icons\window_256x256.png" />
+    <Content Include="icons\wizard_128x128.png" />
+    <Content Include="icons\wizard_256x256.png" />
+    <Content Include="icons\yellow-button_128x128.png" />
+    <Content Include="icons\yellow-button_256x256.png" />
+    <Content Include="img\ayrfryer.jpg" />
+    <Content Include="img\fone.jpg" />
+    <Content Include="img\mia.jpg" />
+    <Content Include="img\relogio.jfif" />
+    <Content Include="img\relogio.jpg" />
+    <Content Include="img\sara.jpg" />
+    <Content Include="img\sarai.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

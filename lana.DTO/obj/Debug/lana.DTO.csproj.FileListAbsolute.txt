@@ -1,0 +1,6 @@
+C:\Users\wil.rrsilva\source\repos\lanaSolution\lana.DTO\bin\Debug\lana.DTO.dll
+C:\Users\wil.rrsilva\source\repos\lanaSolution\lana.DTO\bin\Debug\lana.DTO.pdb
+C:\Users\wil.rrsilva\source\repos\lanaSolution\lana.DTO\obj\Debug\lana.DTO.csproj.AssemblyReference.cache
+C:\Users\wil.rrsilva\source\repos\lanaSolution\lana.DTO\obj\Debug\lana.DTO.csproj.CoreCompileInputs.cache
+C:\Users\wil.rrsilva\source\repos\lanaSolution\lana.DTO\obj\Debug\lana.DTO.dll
+C:\Users\wil.rrsilva\source\repos\lanaSolution\lana.DTO\obj\Debug\lana.DTO.pdb
